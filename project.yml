@@ -7,7 +7,9 @@ targets:
   HyzzFFZ:
     type: application
     platform: iOS
-    sources: [HyzzFFZ]
+    sources:
+      - HyzzFFZ
+      - Shared
     settings:
       base:
         INFOPLIST_FILE: HyzzFFZ/Info.plist
@@ -19,7 +21,7 @@ targets:
     platform: iOS
     sources:
       - HyzzFFZExtension
-      - HyzzFFZ/AimbotEngine.swift
+      - Shared
     settings:
       base:
         INFOPLIST_FILE: HyzzFFZExtension/Info.plist
