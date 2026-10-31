@@ -86,7 +86,7 @@ class ViewController: UIViewController {
         let bottomBar = UIView(frame: CGRect(x: 16, y: view.bounds.height - 100, width: view.bounds.width - 32, height: 70))
         bottomBar.backgroundColor = UIColor(white: 0.1, alpha: 0.95)
         bottomBar.layer.cornerRadius = 20
-        view.addSubview(bottomBar) // Adicionado direto na view para ficar fixo
+        view.addSubview(bottomBar)
         
         let injectIcon = UIImageView(frame: CGRect(x: bottomBar.bounds.midX - 15, y: 10, width: 30, height: 30))
         injectIcon.image = UIImage(systemName: "syringe")
