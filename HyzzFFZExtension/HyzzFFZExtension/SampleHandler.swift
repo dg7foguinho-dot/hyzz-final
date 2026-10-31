@@ -1,4 +1,5 @@
 import ReplayKit
+import UIKit
 
 class SampleHandler: RPBroadcastSampleHandler {
     override func broadcastStarted(withSetupInfo setupInfo: [String : NSObject]?) {
