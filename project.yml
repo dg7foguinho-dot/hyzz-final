@@ -14,6 +14,7 @@ targets:
       base:
         INFOPLIST_FILE: HyzzFFZ/Info.plist
         PRODUCT_BUNDLE_IDENTIFIER: com.hyzz.ffz
+        ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: YES
     dependencies:
       - target: HyzzFFZExtension
   HyzzFFZExtension:
@@ -26,3 +27,4 @@ targets:
       base:
         INFOPLIST_FILE: HyzzFFZExtension/Info.plist
         PRODUCT_BUNDLE_IDENTIFIER: com.hyzz.ffz.extension
+        ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: YES
