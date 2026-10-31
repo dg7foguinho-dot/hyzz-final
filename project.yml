@@ -17,7 +17,9 @@ targets:
   HyzzFFZExtension:
     type: app-extension
     platform: iOS
-    sources: [HyzzFFZExtension]
+    sources:
+      - HyzzFFZExtension
+      - HyzzFFZ/AimbotEngine.swift
     settings:
       base:
         INFOPLIST_FILE: HyzzFFZExtension/Info.plist
