@@ -11,11 +11,11 @@ jobs:
         run: xcodegen generate
       - name: Build
         run: |
-          xcodebuild -project HyzzFFZ.xcodeproj -scheme HyzzFFZ -sdk iphoneos -configuration Release CODE_SIGNING_ALLOWED=NO build
+          xcodebuild -project HyzzFFZ.xcodeproj -scheme HyzzFFZ -sdk iphoneos -configuration Release CODE_SIGNING_ALLOWED=NO -derivedDataPath build
       - name: Package IPA
         run: |
-          mkdir Payload
-          cp -R build/Release-iphoneos/HyzzFFZ.app Payload/
+          mkdir -p Payload
+          cp -R build/Build/Products/Release-iphoneos/HyzzFFZ.app Payload/
           zip -r HyzzFFZ.ipa Payload/
       - uses: actions/upload-artifact@v4
         with:
