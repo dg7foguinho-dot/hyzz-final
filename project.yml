@@ -9,22 +9,8 @@ targets:
     platform: iOS
     sources:
       - HyzzFFZ
-      - Shared
     settings:
       base:
         INFOPLIST_FILE: HyzzFFZ/Info.plist
         PRODUCT_BUNDLE_IDENTIFIER: com.hyzz.ffz
-        ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: YES
-    dependencies:
-      - target: HyzzFFZExtension
-  HyzzFFZExtension:
-    type: app-extension
-    platform: iOS
-    sources:
-      - HyzzFFZExtension
-      - Shared
-    settings:
-      base:
-        INFOPLIST_FILE: HyzzFFZExtension/Info.plist
-        PRODUCT_BUNDLE_IDENTIFIER: com.hyzz.ffz.extension
         ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: YES
